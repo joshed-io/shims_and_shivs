@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'DMF Cantell';
+  src: url('DMFCantell.ttf');
+}
+@font-face {
+  font-family: 'DK Trollslayer';
+  src: url('DKTrollslayer.ttf');
+}
 .content {
   color: #030F00;
   font-family: 'DMF Cantell';
