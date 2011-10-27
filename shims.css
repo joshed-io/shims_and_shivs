@@ -1,0 +1,48 @@
+.content {
+  color: #030F00;
+  font-family: 'DMF Cantell';
+}
+.content .shivs {
+  font-family: 'DK Trollslayer';
+  font-size: 28px;
+  color: rgb(255, 17, 0);
+}
+h1 {
+  font-size: 124px;
+  color: rgb(255, 17, 0);
+  font-family: 'DK Trollslayer';
+}
+.content .smalla {
+  font-size: 64px;
+  color: #F52314;
+  font-family: 'DK Trollslayer';
+}
+h2 {
+  font-size: 64px;
+  color: #030F00;
+}
+h3 {
+  font-size: 64px;
+  font-family: monospace;
+  color: #5E7D24;
+}
+h5 {
+  color: #D3C15B;
+}
+.content .devil {
+  font-family: 'Devil Inside';
+  font-size: 214px;
+  line-height: 100px;
+}
+.content .light {
+  color: #FAFFC9;
+}
+.wordmark img {
+  height: 60px;
+}
+.content .spacer {
+  height: 40px;
+}
+code {
+  font-size: 48px;
+}
