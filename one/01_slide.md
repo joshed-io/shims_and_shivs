@@ -99,7 +99,7 @@ But first,
 
 !SLIDE center bullets incremental
 ## uses shims as shivs
-* ## (to keep the of peace)
+* ## (to fight the bad guys)
 * # THAN SO CAN YOU!
 
 !SLIDE center bullets incremental
