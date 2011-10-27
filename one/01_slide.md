@@ -275,15 +275,20 @@ what's that?
 # A few guidelines
 * Don't shimitate. Does it exist already?
 * Strive for API Compatibility
-* Be supertiny
-* Read [Addy's Guide](http://addyosmani.com)
+* Be tiny, little/no dependencies
+* Read [Addy's Guide](http://addyosmani.com/blog/writing-polyfills/)
+
+!SLIDE center bullets incremental
+* # That's it!
+
+* # for you!
 
 !SLIDE center bullets incremental
 # Thanks!
-* I hope you have a better idea of
-* ## what polyfills are
-and more importantly
-* ## how to think about them
+* I hope you grok
+* ## the polyfills
+* and
+* ## might try one!
 
 !SLIDE center bullets
 # Further Reading
@@ -294,7 +299,7 @@ and more importantly
 * [History of the HTML5 Shiv](http://paulirish.com/2011/the-history-of-the-html5-shiv/)
 
 !SLIDE center bullets
-# HAPPY HALLOWEEN!
+# HAPPY HALLOWEEN!!
 
-
+!SLIDE center bullets
 # QUESTIONS?
