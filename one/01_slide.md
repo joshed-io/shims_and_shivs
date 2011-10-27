@@ -19,14 +19,17 @@ By Josh Dzielak
 
 Let's talk about
 # POLYFILLS
-* JavaScript shims that fill feature gaps amongst browsers
-* "Poly" because they can be pretty diverse (i.e. canvas)
+"A shim that mimics a future API providing fallback functionality to older browsers." - Remy Sharp
+
+
+Polyfills help you use new technologies without breaking in old browsers
 
 !SLIDE center bullets incremental
 # Does it matter?
-* Yes! Polyfills have sped up HTML5 adoption.
+* Yes! Polyfills speed HTML5 adoption.
 * B/c they let developers do the new stuff...
-* without breaking old platforms.
+* with less duplication...
+* to support the old stuff
 
 !SLIDE center bullets incremental
 # The Spooky Example
@@ -84,7 +87,7 @@ But first,
 
 !SLIDE center bullets incremental
 ## can use shims as shivs
-* ## - in the name of peace -
+* ## (in the name of peace)
 * # THAN SO CAN YOU!
 !SLIDE center
 
@@ -136,12 +139,29 @@ detect features, not browsers
 
 !SLIDE center bullets incremental
 # Things Commonly Polyfilled
-## Audio and Video
-## Web Sockets
+## Let's explore a few.
+
+!SLIDE center bullets incremental
+## Audio
+* [jPlayer](http://github.com/happyworm/jPlayer) -  jQuery, Flash Fallback
+* [audio.js](http://kolber.github.com/audiojs) - Drop-In, Flash Fallback
+* ## Video
+* [video for everybody](http://web.archive.org/web/20101205155004/http://camendesign.com/code/video_for_everybody) - Markup, no JS. Nice!
+
+!SLIDE center bullets incremental
 ## CSS3
-## Cross Domain Messaging
+* [css3-mediaqueries-js](http://code.google.com/p/css3-mediaqueries-js/)- Media Queries Everywhere
+* [cssFx](http://imsky.github.com/cssFx/) - Inserts Vendor-Specific Properties
+* [Scoped CSS](https://github.com/thingsinjars/jQuery-Scoped-CSS-plugin) - Limit Styles!
+
+!SLIDE center bullets incremental
+## Web Sockets
+* [sockjs](https://github.com/sockjs/sockjs-client) - Full solution for WebSocket emulation
+* [socket io](http://socket.io/) - Client+Server
+* [pusherapp](http://pusherapp.com/) - WaaS
 
 !SLIDE center bullets
+Now, some general
 ## DO's
 and
 # DON'TS
@@ -155,24 +175,76 @@ to try new technologies...
 ##...just because you have to support users on old platforms.
 # YOUR'E NOT ALONE
 
+!SLIDE center bullets incremental
+a few
+
+# philosophies
+
+## can help you
+
+structure the problem.
 
 !SLIDE center bullets incremental
-# Making a shim?
-* Don't reinvent
+you might know about
+# Progressive
+
+# Enhancement
+
+"Progressive enhancement is a strategy for web design that emphasizes accessibility, semantic HTML markup, and external stylesheet and scripting technologies."
+\- [From  wikipedia](http://en.wikipedia.org/wiki/Progressive_enhancement)
+
+!SLIDE center bullets incremental
+and there's also
+# Regressive
+
+#Enhancement
+
+"The “polyfill” or “regressive enhancement” technique just means that you go ahead and use the new features, then use JavaScript to emulate native behavior in older browsers."
+\- [From Alex Sexton](http://www.sitepoint.com/regressive-enhancement-with-modernizr-and-yepnope/)
+
+!SLIDE center bullets incremental
+# Recap
+* ## So that's
+
+!SLIDE center bullets incremental
+* ## Progressive Enhancement
+  * design and build something that works everywhere (to the baseline)
+  * extend to new capabilities where you can
+* ## Regressive Enhancement
+  * design and build with the latest and greatest
+  * backfill where it breaks
+
+!SLIDE center bullets incremental
+# Reality Check
+
+## Both philosophies are useful.
+
+There are myriad considerations.
+
+## What's important to you?
+
+Use your <em>Best Judgment</em>®.
+
+## You'll be fine!
+
+!SLIDE center bullets incremental
+## So, we're using shims now?
+# Great
+## What if we need to make a shim?
+
+!SLIDE center bullets incremental
+# A few guidelines
+* Don't shimitate. Does it exist already?
 * Strive for API Compatibility
 * Be supertiny
 * Read [Addy's Guide](http://addyosmani.com)
 
 !SLIDE center bullets incremental
-# Fashimable Ex. #1
-### Object.keys
-
-      @@@ javascript
-      Object.prototype.keys = function() {
-
-      }
-
-!SLIDE center bullets incremental
+# Thanks!
+* I hope you have a better idea of
+* ## what polyfills are
+and more importantly
+* ## how to think about them
 
 !SLIDE center bullets
 # Further Reading
@@ -181,3 +253,9 @@ to try new technologies...
 * [Quirksmode Compatibility](http://www.quirksmode.org/compatibility.html)
 * [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 * [History of the HTML5 Shiv](http://paulirish.com/2011/the-history-of-the-html5-shiv/)
+
+!SLIDE center bullets
+# HAPPY HALLOWEEN!
+
+
+# QUESTIONS?
