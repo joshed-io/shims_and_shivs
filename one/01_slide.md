@@ -12,32 +12,42 @@ By Josh Dzielak
 * Founding Developer at ![DisneyHTML5Summit](tv_logo.png?123)
 * We're a Safe Social Network for Kids
 * We joined Disney in 2011
-* Shivs of choice: JavaScript & Ruby
 
 !SLIDE bullets incremental
-.notes not about geometry, not a rock band, not a winter coat lining
+# My shivs of choice
+* JavaScript
+* Ruby
+* Node, Sinatra, Rails
 
-Let's talk about
+!SLIDE bullets incremental
+sometimes
+# I think about
+* JavaScript module organization/AMD
+* Design patterns
+* App Platforms
+
+!SLIDE bullets incremental
+today let's talk about
 # POLYFILLS
 "A shim that mimics a future API providing fallback functionality to older browsers." - Remy Sharp
 
 
-Polyfills help you use new technologies without breaking in old browsers
+Polyfills help you use technologies available in new browsers while supporting old ones.
 
 !SLIDE center bullets incremental
-# Does it matter?
-* Yes! Polyfills speed HTML5 adoption.
+# Why is this good?
+* Polyfills speed adoption, like w/ HTML5.
 * B/c they let developers do the new stuff...
-* with less duplication...
-* to support the old stuff
+* with less work to support the old stuff too
 
 !SLIDE center bullets incremental
-# The Spooky Example
+spooky
+# Example
 * ## Using HTML5 tags in an 'older' browser...
       @@@ html
       <footer>...</footer>
 
-!SLIDE center
+!SLIDE center bullets incremental
 .notes 'use horrible'
 
 ...like
@@ -47,6 +57,8 @@ Polyfills help you use new technologies without breaking in old browsers
 # "Expect Horror"
 
 # 8
+
+* srry ie kthx
 
 !SLIDE center
 ### HTML5 Tag support:
@@ -86,21 +98,21 @@ But first,
 * ## OK
 
 !SLIDE center bullets incremental
-## can use shims as shivs
-* ## (in the name of peace)
+## uses shims as shivs
+* ## (to keep the of peace)
 * # THAN SO CAN YOU!
-!SLIDE center
 
 !SLIDE center bullets incremental
-# ShimWOW!
-* Got a project? Ask:
+# I've heard of it!
+* ## Cool.
+* So, for your next project, ask:
 * Who am I supporting?
 * What modern feature do I need?
 
 !SLIDE center incremental
-Maybe we want geolocation
+Maybe you want geolocation
 
-for desktop and mobile browsers.
+for some desktop and mobile browsers.
 
 ## What now?
 Sure,
@@ -111,8 +123,10 @@ Sure,
 	$ google 'new guy needs polyfill'
 	processing........
 	processing........
-	$ hurry up
-	i'm going as fast as i ca
+	processing........
+	processing........
+	processing........
+	processing........
 
 !SLIDE center
 ### Results Found!
@@ -137,15 +151,29 @@ detect features, not browsers
       });
 # Proved it!
 
+!SLIDE center incremental bullets
+# Bonus Round
+* Yepnope can help you handle all sorts of yes/no things.
+* Like your development environment.
+
+!SLIDE incremental
+      @@@ javascript
+      Modernizr.load({
+        test: Environment.dev,
+        yep : 'facebook.mocks.js',
+        nope: 'facebook.all.js'
+      });
+# Slam Dunk!
+
 !SLIDE center bullets incremental
 # Things Commonly Polyfilled
 ## Let's explore a few.
 
 !SLIDE center bullets incremental
-## Audio
+## HTML5 Audio
 * [jPlayer](http://github.com/happyworm/jPlayer) -  jQuery, Flash Fallback
 * [audio.js](http://kolber.github.com/audiojs) - Drop-In, Flash Fallback
-* ## Video
+* ## HTML5 Video
 * [video for everybody](http://web.archive.org/web/20101205155004/http://camendesign.com/code/video_for_everybody) - Markup, no JS. Nice!
 
 !SLIDE center bullets incremental
@@ -160,11 +188,19 @@ detect features, not browsers
 * [socket io](http://socket.io/) - Client+Server
 * [pusherapp](http://pusherapp.com/) - WaaS
 
+!SLIDE center bullets incremental
+# Choosing Polyfills
+* Documentation/Readable Source
+* Community support & activity
+* License
+* File Size
+
 !SLIDE center bullets
 Now, some general
 ## DO's
 and
 # DON'TS
+at least one
 
 !SLIDE center bullets
 Don't be
@@ -172,17 +208,19 @@ Don't be
 to try new technologies...
 
 !SLIDE center bullets incremental
-##...just because you have to support users on old platforms.
+##...just because you have to support legacy platforms.
 # YOUR'E NOT ALONE
 
 !SLIDE center bullets incremental
-a few
+DO use
+
+# these
 
 # philosophies
 
-## can help you
+## to help you
 
-structure the problem.
+structure the problem
 
 !SLIDE center bullets incremental
 you might know about
@@ -194,7 +232,7 @@ you might know about
 \- [From  wikipedia](http://en.wikipedia.org/wiki/Progressive_enhancement)
 
 !SLIDE center bullets incremental
-and there's also
+but what about
 # Regressive
 
 #Enhancement
@@ -215,22 +253,23 @@ and there's also
   * backfill where it breaks
 
 !SLIDE center bullets incremental
-# Reality Check
+# Meanwhile in Reality
 
 ## Both philosophies are useful.
 
 There are myriad considerations.
 
-## What's important to you?
+What's important to you?
 
-Use your <em>Best Judgment</em>®.
+## Use your <em>Best Judgment</em>®.
 
-## You'll be fine!
+You'll be fine!
 
 !SLIDE center bullets incremental
-## So, we're using shims now?
-# Great
-## What if we need to make a shim?
+what's that?
+## you're using a shim now?
+# High Five
+## But what if you need to make a shim?
 
 !SLIDE center bullets incremental
 # A few guidelines
